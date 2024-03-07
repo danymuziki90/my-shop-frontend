@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Link from "next/link";
 // Utility function to format price with a comma for thousands
 const formatPrice = (price) => {
@@ -31,7 +33,7 @@ export default function Collection({ product }) {
                     <p className="mt-4 text-gray-500">
                       {product.description}
                     </p>
-                    <p className="mt-1 text-lg text-primary">ksh. {formatPrice(product.price)}</p>
+                    <p className="mt-1 text-lg text-primary">USD {formatPrice(product.price)}</p>
                   </header>
 
                   <Link
@@ -57,6 +59,7 @@ export default function Collection({ product }) {
 
                   <li>
                     <div  className="block group">
+                      // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={product.images[1]}
                         alt=""
