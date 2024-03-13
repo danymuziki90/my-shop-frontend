@@ -33,7 +33,7 @@ export default function Header() {
         <Link className="flex gap-1 items-center text-teal-500 font-medium text-lg hover:text-primary " href="/">
 
           
-          <span>VNKENCHY </span>
+          <span>V-NKENCHY </span>
 
         </Link>
 
