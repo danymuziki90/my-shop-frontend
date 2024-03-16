@@ -21,7 +21,8 @@ export default function Products({ products }) {
             <div key={product.id} className="group relative">
               <div className="group block overflow-hidden border border-accent rounded-xl border-opacity-10">
                 <div className="p-1">
-                  <div className="relative h-[300px] sm:h-[300px]">
+                  <picture className="relative h-[300px] sm:h-[300px]">
+                    
                     <img
                       src={product.images[0]}
                       alt=""
@@ -33,7 +34,7 @@ export default function Products({ products }) {
                       alt=""
                       className="absolute inset-0 h-full w-full object-contain opacity-0 group-hover:opacity-100"
                     />
-                  </div>
+                  </picture>
 
                   <div className="relative  p-3 border-t">
                     <Link href={'/products/' + product._id}>

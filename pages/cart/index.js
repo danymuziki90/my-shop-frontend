@@ -42,7 +42,7 @@ export default function Cart() {
       setIsSuccess(true);
       clearCart();
     }
-  }, []);
+  }, [clearCart]);
 
   let total = 0;
   for (const productId of cartProducts) {
@@ -81,7 +81,7 @@ export default function Cart() {
     if (response.data.url) {
       window.location = response.data.url
     } else {
-      toast.error('An error occured!!')
+      toast.error('An error occurred!!')
     }
   }
 
@@ -113,11 +113,11 @@ export default function Cart() {
                     <div key={product._id} className="mt-8">
                       <ul className="space-y-4">
                         <li className="flex items-center gap-4 justify-between">
-                          <img
+                          <picture> <img
                             src={product.images[0]}
                             alt=""
                             className="h-16 w-16 rounded object-cover"
-                          />
+                          /> </picture>
 
                           <div>
                             <h3 className="text-md text-text max-w-md">{product.title}</h3>
