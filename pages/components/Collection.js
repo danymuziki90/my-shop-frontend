@@ -59,7 +59,6 @@ export default function Collection({ product }) {
 
                   <li>
                     <div  className="block group">
-                      // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={product.images[1]}
                         alt=""
