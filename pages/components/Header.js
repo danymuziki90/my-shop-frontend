@@ -55,7 +55,7 @@ export default function Header() {
               <li>
                 <select className={`text-accent transition hover:text-accent/75 ${pathname === ('/categories') ? 'text-primary' : ""} `} href="/categories">
                   <option value="0">Categories</option>
-                  <option value="1">Shoes</option>
+                  <option value="1"></option>
                 </select>
 
               </li>
